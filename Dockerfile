@@ -1,4 +1,6 @@
 FROM node:12-slim
+LABEL author="estat"
+LABEL project="estatcamp-express"
 
 # grab tini for signal processing and zombie killing
 ENV TINI_VERSION 0.9.0
