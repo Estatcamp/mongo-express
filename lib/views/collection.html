@@ -369,6 +369,7 @@
       </div>
     </div>
 
+  {% if !settings.no_import %}
     <div class="col-sm-4">
       <div class="well">
         <a class="btn btn-warning btn-block import-file-link">
@@ -377,6 +378,7 @@
         <input class="input-hidden import-input-file" type="file" name="import-file" collection-name="{{ collectionName | url_encode }}"/>
       </div>
     </div>
+  {% endif %}
 
     {% if !settings.read_only %}
       <div class="col-sm-4">

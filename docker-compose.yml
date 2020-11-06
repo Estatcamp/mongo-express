@@ -22,5 +22,6 @@ services:
             - ME_CONFIG_BASICAUTH_PASSWORD=estatcamp
             - ME_CONFIG_OPTIONS_NO_DELETE=true
             - ME_CONFIG_OPTIONS_READONLY=true
+            - ME_CONFIG_OPTIONS_NO_IMPORT=true
         depends_on:
             - mongodb
